@@ -7,13 +7,10 @@ class Anagram
     @matches = []
   end
   
-  def arrays(word, tests)
-    
-  end
-  
   def match(testers)
     testers.each do |tester|
-      @matches << tester if 
+      @matches << tester if @word.chars.sort.join == tester.chars.sort.join
     end
+    @matches
   end
 end
